@@ -75,8 +75,7 @@ include "nav.php";
             </div>
             <div class="card-panel">
                 <div class="contents">
-                    Despite the huge influence of technology in our daily life, majority of the students still create their notes manually with pen and paper. While this may work at a lower level, managing these notes becomes a tedious task at higher levels. Additionally, there is a risk of these paper notes being destroyed or lost. <br><br>
-                    To resolve this problem, we decided to construct a web-based application that helps students to create and manage their notes with ease. While web-based note apps already exist and provide good services, our main aim is to increase the convenience for students manifold by building upon these apps as our base.
+                    Despite the huge influence of technology in our daily life, majority of the students still create their notes manually with pen and paper. While this may work at a lower level, managing these notes becomes a tedious task at higher levels. Additionally, there is a risk of these paper notes being destroyed or lost. To resolve this problem, we decided to construct a web-based application that helps students to create and manage their notes with ease. While web-based note apps already exist and provide good services, our main aim is to increase the convenience for students manifold by building upon these apps as our base.
                 </div>
             </div>
         </div>
@@ -88,16 +87,16 @@ include "nav.php";
             </div>
             <div class="card-panel">
                 <div class="content-instruction">
-                    The user or student has to first register to access the system. Users can add, remove, and set their notes as public or private. They can also view notes that are available in the public ledger. <br><br>
-                    Each user will have a unique username and password to access their account. Each note created will have a unique identifier (Note ID), and each public note will have a Public ID.<br><br>
-                    <strong>Admin Controls:</strong> <br>
-                    The admin will have login credentials to manage the system. The admin can:
-                    <ul>
-                        <li>View the list of registered users.</li>
-                        <li>Remove users from the system.</li>
-                        <li>View only the note names and authors but not the content.</li>
-                        <li>Delete specific user notes if necessary.</li>
-                    </ul>
+                    The user or the student has to first register himself in order to access the system. He can add ,remove,
+                public/private his notes. He can also view the notes which are in public ledge.Each user would have a
+                unique UserName and a password through which they could access their accounts. Each note created would
+                have a unique id called NoteId and similarly each public note would have a PublicId.
+                <br>
+                <strong class="text-bold">Admin Controls</strong> <br>
+                The admin would be provided with his/her login credentials. The admin can view different users who are
+                registered on the system and would have the ability to remove them from the system. The admin can only
+                view the name of the note and the user who created it , he neither can view the content of the note nor
+                change it. The admin would have the facility to remove a user’s note.
                 </div>
             </div>
         </div>
