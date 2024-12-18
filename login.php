@@ -63,27 +63,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
-        body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-            background-color: #fff;
-        }
-        main {
-            flex: 1 0 auto;
-        }
-        .card {
-            border-radius: 15px;
-        }
-        .error-message {
-            color: #c62828;
-            font-weight: bold;
-            text-align: center;
-        }
-        .success-message {
-            color: #2e7d32;
-            font-weight: bold;
-            text-align: center;
+        .form-div{
+            margin-top: 25px;
         }
     </style>
 </head>
@@ -105,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php endif; ?>
 
         <!-- Login Form -->
-        <div class="row">
+        <div class="row form-div">
             <div class="col s12 m8 offset-m2 l6 offset-l3">
                 <div class="card z-depth-3">
                     <div class="card-content">
@@ -119,15 +100,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 <input id="password" type="password" name="password" required>
                                 <label for="password">Password</label>
                             </div>
-                            <button class="btn waves-effect waves-light teal" type="submit" style="width: 100%; margin-top: 20px;">Login</button>
-                            <button class="btn-flat waves-effect light-blue" type="reset" style="width: 100%; margin-top: 10px;">Reset</button>
+                            <div class="card-action center-align">
+                                <!-- Submit and Reset Buttons -->
+                                <button type="submit" class="btn waves-effect waves-light">Register</button>
+                                <button type="reset" class="btn red lighten-1 waves-effect waves-light">Reset</button>
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <?php include 'footer.php' ?>
+    <!-- Footer -->
+    <?php include 'log-footer.php' ?>
     <!-- Materialize JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
