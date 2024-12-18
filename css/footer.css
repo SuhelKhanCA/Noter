@@ -1,40 +1,8 @@
+/* Footer Styling */
 .footer {
-    background-color: #444a57;
-    color: white;
-    padding: 20px 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer .logo img {
-    max-width: 100px;
-    height: auto;
-}
-
-.footer .university-name {
-    flex-grow: 1;
     text-align: center;
-}
-
-.footer .university-name h5 {
-    margin: 0;
-    font-size: 1.2rem;
-}
-
-.footer .social-icons a {
+    padding: 20px;
+    background-color: #00897b;
     color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-.footer .social-icons a:hover {
-    color: #ffc107;
+    font-size: 1rem;
 }
