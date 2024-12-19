@@ -70,9 +70,10 @@
             <div class="row">
                 <!-- Footer Content -->
                 <div class="col l6 s12">
-                    <h5 class="white-text">Footer Content</h5>
+                    <h5 class="white-text">Developed by</h5>
                     <p class="grey-text text-lighten-4">
-                        Use this footer to organize your content and provide important links or information.
+                        Taha Mustafa <small>MCA, DU</small> <br>
+                        Suhel Khan <small>MCA, AMU</small> <br>
                     </p>
                 </div>
 
@@ -80,12 +81,12 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Quick Links</h5>
                     <ul class="social-icons">
-                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/suhelkhanalig" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/suhelkhanalig" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/suhel_khan_alig/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/suhelkhanska/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@skalearners" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://github.com/SuhelKhanCA/" target="_blank"><i class="fab fa-github"></i></a>
                     </ul>
                 </div>
             </div>
@@ -94,7 +95,7 @@
         <div class="footer-copyright">
             <div class="container">
                 © 2024 Noter. All Rights Reserved.
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                <a class="grey-text text-lighten-4 right" href="https://suhelkhanca.github.io/Portfolio/" target="_blank">More Links</a>
             </div>
         </div>
     </footer>
