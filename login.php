@@ -102,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             </div>
                             <div class="card-action center-align">
                                 <!-- Submit and Reset Buttons -->
-                                <button type="submit" class="btn waves-effect waves-light">Register</button>
+                                <button type="submit" class="btn waves-effect waves-light">Login</button>
                                 <button type="reset" class="btn red lighten-1 waves-effect waves-light">Reset</button>
                             </div>
                         </form>
