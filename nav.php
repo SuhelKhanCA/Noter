@@ -1,5 +1,9 @@
 <?php
-session_start();
+// session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     $loggedin = true;
 } else {
@@ -23,7 +27,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> -->
+     <link rel="stylesheet" href="./css/materialize/materialize.min.css">
     <style>
         .nav-wrapper {
             padding: 0 20px;
@@ -49,7 +54,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <nav class="teal lighten-1">
         <div class="nav-wrapper">
             <!-- Logo as Text -->
-            <a href="#" class="brand-logo left">Noter</a>
+            <a href="./" class="brand-logo left">Noter</a>
 
             <!-- Mobile Menu Trigger -->
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
@@ -65,12 +70,12 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 <?php else: ?>
                     <?php if ($_SESSION['user_id'] == 1): ?>
                         <li><a href="./view_users.php">Users</a></li>
-                        <li><a href="./admin_publicnotes.php">PublicNotes</a></li>
-                        <li><a href="./removeUser.php">RemovedUsers</a></li>
+                        <li><a href="./admin_publicnotes.php">Public Notes</a></li>
+                        <li><a href="./removeUser.php">Removed Users</a></li>
                     <?php else: ?>
-                        <li><a href="./notes.php">YourNotes</a></li>
-                        <li><a href="./notes.php">AddANote</a></li>
-                        <li><a href="./publicnotes.php">PublicNotes</a></li>
+                        <li><a href="./notes.php">Your Notes</a></li>
+                        <li><a href="./notes.php">Add Note</a></li>
+                        <li><a href="./publicnotes.php">Public Notes</a></li>
                     <?php endif; ?>
                     <li><a href="./logout.php">LogOut</a></li>
                 <?php endif; ?>
@@ -99,9 +104,10 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     </ul>
 
     <!-- Materialize JS -->
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-    ></script>
+    ></script> -->
+    <script src="./js/materialize/materialize.min.js"></script>
     <script>
         // Initialize Mobile Sidenav
         document.addEventListener("DOMContentLoaded", function () {

@@ -42,6 +42,9 @@ $user = $_SESSION['username'];
                     <div class="input-field">
                         <label for="note_title">Note Title</label>
                         <input type="text" id="note_title" name="note_title" placeholder="Write the Title" required>
+                        <form action="./ai.php">
+                            <button type="submit" class="btn teal lighten-1 right generate-btn">Generate with AI</button>
+                        </form>
                     </div>
                     <div class="input-field">
                         <label for="note_desc">Description</label>

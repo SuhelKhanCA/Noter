@@ -28,22 +28,37 @@ $id = $_GET['id'];
         while ($fetch = mysqli_fetch_assoc($result)) {
             echo '
             <div class="card">
+                <div class="">
+                    <form action="./ai.php" onsubmit="passToForm()">
+                    <input type="hidden" id="hiddenInput" name="paragraphContent" value="">
+                            <button type="submit" class="btn btn-small teal lighten-1 right generate-btn">Summerize with AI</button>
+                    </form>
+                </div>
                 <div class="card-content">
                     <span class="card-title teal-text"><b>Note Title:</b> ' . htmlspecialchars($fetch['notename']) . '</span>
                     <p><b>Description:</b></p>
                     <p>' . nl2br(htmlspecialchars($fetch['Description'])) . '</p>
-                </div>
+                    </div>
                 <div class="card-action">
                     <p><b>Date Created:</b> ' . date('d-m-Y', strtotime($fetch['time'])) . '</p>
                     <p><b>Time Created:</b> ' . date('h:i A', strtotime($fetch['time'])) . '</p>
                 </div>
-            </div>';
+            </div>
+            ';
         }
         ?>
     </div>
-
+    <!-- Footer -->
+     <?php include 'log-footer.php' ?>
     <!-- Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        
+        function passToForm() {
+            var paragraphContent = document.getElementById("myParagraph").innerText;  
+            document.getElementById("hiddenInput").value = paragraphContent;  
+        }
+    </script>
 </body>
 
 </html>
