@@ -38,13 +38,18 @@ $user = $_SESSION['username'];
         <div id="createNoteModal" class="modal">
             <div class="modal-content">
                 <h5 class="teal-text">Create a New Note</h5>
-                <form action="./add_note.php" method="post">
+                <!-- First Form: Generate with AI -->
+                <form id="generateForm" action="./ai.php" method="POST">
+                    <input type="hidden" name="gen" value="generate">
+                    <input type="hidden" id="hidden_title" name="note_title" value=""> <!-- Hidden input for title -->
+                    <button type="submit" class="btn teal lighten-1 right generate-btn">Generate with AI</button>
+                </form>
+
+                <!-- Second Form: Add Note -->
+                <form action="./add_note.php" method="POST" oninput="syncTitle()">
                     <div class="input-field">
                         <label for="note_title">Note Title</label>
                         <input type="text" id="note_title" name="note_title" placeholder="Write the Title" required>
-                        <form action="./ai.php">
-                            <button type="submit" class="btn teal lighten-1 right generate-btn">Generate with AI</button>
-                        </form>
                     </div>
                     <div class="input-field">
                         <label for="note_desc">Description</label>
@@ -109,6 +114,14 @@ $user = $_SESSION['username'];
         });
     </script>
     <script src="./js/main.js"></script>
+    <script>
+    // JavaScript to sync the title
+    function syncTitle() {
+        const noteTitle = document.getElementById('note_title').value; // Get title value
+        const hiddenTitle = document.getElementById('hidden_title');  // Hidden input in the first form
+        hiddenTitle.value = noteTitle; // Set the value of the hidden input
+    }
+</script>
 </body>
 
 </html>
