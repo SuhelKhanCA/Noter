@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Materialize CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet"
+    />
+    <!-- Materialize Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    {% block title %}
+    <title>Noter</title>
+    {% endblock title %}
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="teal lighten-1">
+      <div class="nav-wrapper container">
+        <!-- Logo -->
+        <a href="#" class="brand-logo left">Noter</a>
+
+        <!-- Mobile Menu Trigger -->
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
+          <i class="material-icons">menu</i>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">How To Use?</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Your Notes</a></li>
+          <li><a href="#">Add Note</a></li>
+          <li><a href="#">Public Notes</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation (Sidenav) -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#">How To Use?</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Your Notes</a></li>
+      <li><a href="#">Add Note</a></li>
+      <li><a href="#">Public Notes</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+
+    {% block content %}{% endblock content %}
+
+    <!-- Footer -->
+    <footer class="page-footer teal darken-2">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Content -->
+          <div class="col l6 s12">
+            <h5 class="white-text">Developed by</h5>
+            <p class="grey-text text-lighten-4">
+              Suhel Khan <small>MCA, AMU</small> <br />
+            </p>
+          </div>
+
+          <!-- Footer Links -->
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Quick Links</h5>
+            <div class="center-align">
+              <a
+                href="https://www.facebook.com/suhelkhanalig"
+                target="_blank"
+                class="white-text"
+                ><i class="fab fa-facebook fa-lg"></i
+              ></a>
+              <a
+                href="https://x.com/suhelkhanalig"
+                target="_blank"
+                class="white-text"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/suhel_khan_alig/"
+                target="_blank"
+                class="white-text"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/suhelkhanska/"
+                target="_blank"
+                class="white-text"
+                ><i class="fab fa-linkedin fa-lg"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@skalearners"
+                target="_blank"
+                class="white-text"
+                ><i class="fab fa-youtube fa-lg"></i
+              ></a>
+              <a
+                href="https://github.com/SuhelKhanCA/"
+                target="_blank"
+                class="white-text"
+                ><i class="fab fa-github fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright Section -->
+      <div class="footer-copyright teal darken-3">
+        <div class="container">
+          © 2025 Noter. All Rights Reserved.
+          <a
+            class="grey-text text-lighten-4 right"
+            href="https://suhelkhanca.github.io/Portfolio/"
+            target="_blank"
+            >More Links</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".sidenav");
+        M.Sidenav.init(elems);
+      });
+    </script>
+  </body>
+</html>
