@@ -1,53 +1,105 @@
-{% extends 'base.html' %}
-{% block title %}
+{% extends 'base.html' %} {% block title %}
 <title>Welcome to Noter</title>
-{% endblock %}
-
-{% block content %}
+{% endblock %} {% block content %}
 <!-- Main Content -->
-    <div class="container">
-      <div class="section center-align">
-        <h4 class="teal-text">Motivation Behind the Notes App</h4>
-        <p class="grey-text text-darken-1">
-          Discover the benefits and goals of our innovative notes management application.
+<div class="container">
+  <!-- Motivation Section -->
+  <div class="section center-align">
+    <h4 class="teal-text">Motivation Behind the Notes App</h4>
+    <p class="grey-text text-darken-1">
+      Discover the benefits and goals of our innovative notes management
+      application.
+    </p>
+  </div>
+
+  <!-- Motivation Details -->
+  <div class="card">
+    <div class="card-content">
+      <p>
+        In today's fast-paced world, managing and organizing notes efficiently
+        is essential for students and professionals alike. Our
+        <strong>Notes App</strong> addresses challenges like losing notes,
+        difficulty in sharing, and lack of advanced features.
+      </p>
+    </div>
+  </div>
+
+  <!-- Key Benefits Section -->
+  <div class="card">
+    <div class="card-content">
+      <h5 class="teal-text">Key Benefits</h5>
+      <ul class="collection">
+        <li class="collection-item">
+          <b>Accessibility:</b> Create, update, and manage notes anytime,
+          anywhere.
+        </li>
+        <li class="collection-item">
+          <b>Organization:</b> Keep notes neatly categorized to avoid misplacing
+          them.
+        </li>
+        <li class="collection-item">
+          <b>Collaboration:</b> Share notes publicly for knowledge sharing.
+        </li>
+        <li class="collection-item">
+          <b>Security:</b> Private notes are secured with user login
+          credentials.
+        </li>
+        <li class="collection-item">
+          <b>Admin Control:</b> Admins can manage users and remove inappropriate
+          notes.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contribution Section -->
+  <div class="card">
+    <div class="card-content">
+      <p>
+        Our app encourages collaboration with a
+        <strong>public notes section</strong> where users can access and share
+        knowledge.
+      </p>
+      <p>
+        By focusing on user convenience, we aim to make note management smarter,
+        faster, and more secure.
+      </p>
+    </div>
+  </div>
+
+  <!-- How to Use Section -->
+  <div class="card-panel teal lighten-4">
+    <div class="title">
+      <h5 class="center-align teal-text text-darken-2">How To Use This Site</h5>
+    </div>
+    <div class="section">
+      <p
+        style="font-size: 1.1rem; line-height: 1.6; color: rgba(0, 0, 0, 0.87)"
+      >
+        The user or the student has to first register in order to access the
+        system. He can add, remove, public/private his notes. He can also view
+        the notes which are in the public ledger. Each user will have a unique
+        UserName and password to access their accounts. Each note created will
+        have a unique ID called NoteId and similarly, each public note will have
+        a PublicId.
+      </p>
+      <div class="section">
+        <h6 class="teal-text text-darken-2"><strong>Admin Controls</strong></h6>
+        <p
+          style="
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: rgba(0, 0, 0, 0.87);
+          "
+        >
+          The admin will be provided with login credentials. The admin can view
+          the list of users registered on the system and remove any user from
+          the system. The admin can only view the name of the note and the user
+          who created it; the admin cannot view or modify the content of the
+          note. The admin also has the ability to remove a user's note.
         </p>
       </div>
-
-      <!-- Motivation Section -->
-      <div class="card">
-        <div class="card-content">
-          <p>
-            In today's fast-paced world, managing and organizing notes efficiently is essential for students and professionals alike. 
-            Our <strong>Notes App</strong> addresses challenges like losing notes, difficulty in sharing, and lack of advanced features.
-          </p>
-        </div>
-      </div>
-
-      <!-- Key Benefits Section -->
-      <div class="card">
-        <div class="card-content">
-          <h5 class="teal-text">Key Benefits</h5>
-          <ul class="collection">
-            <li class="collection-item"><b>Accessibility:</b> Create, update, and manage notes anytime, anywhere.</li>
-            <li class="collection-item"><b>Organization:</b> Keep notes neatly categorized to avoid misplacing them.</li>
-            <li class="collection-item"><b>Collaboration:</b> Share notes publicly for knowledge sharing.</li>
-            <li class="collection-item"><b>Security:</b> Private notes are secured with user login credentials.</li>
-            <li class="collection-item"><b>Admin Control:</b> Admins can manage users and remove inappropriate notes.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Contribution Section -->
-      <div class="card">
-        <div class="card-content">
-          <p>
-            Our app encourages collaboration with a <strong>public notes section</strong> where users can access and share knowledge.
-          </p>
-          <p>
-            By focusing on user convenience, we aim to make note management smarter, faster, and more secure.
-          </p>
-        </div>
-      </div>
     </div>
-
+  </div>
+</div>
 {% endblock %}
