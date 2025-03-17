@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block title %}
+<title>Login - Public Notes</title>
+{% endblock %} {% block content %}
+ <!-- Page Content -->
+    <div class="container">
+        <h4 class="center-align teal-text">Public Notes</h4>
+
+        <!-- Example Note Card -->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title"><b>Title:</b> Example Note</span>
+                <p><b>Creator:</b> John Doe</p>
+            </div>
+            <div class="card-action">
+                <a href="#" class="btn teal lighten-1">View</a>
+            </div>
+            <div class="card-content">
+                <p><b>Date:</b> 2025-03-18</p>
+                <p><b>Time:</b> 10:30 AM</p>
+                <p><b>Last Date Modified:</b> 2025-03-18</p>
+                <p><b>Last Time Modified:</b> 11:00 AM</p>
+            </div>
+        </div>
+
+        <!-- No Notes Message -->
+        <p class='red-text center-align'>Currently, no notes are public</p>
+    </div>
+{% endblock %}
