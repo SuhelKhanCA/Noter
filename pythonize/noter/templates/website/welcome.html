@@ -1,0 +1,58 @@
+{% extends 'base.html' %} {% block title %}
+<title>Welcome to Noter</title>
+{% endblock %} {% block content %}
+<div class="container">
+  <!-- Motivation Section -->
+  <div class="section">
+    <h2 class="center teal-text text-darken-3">
+      Motivation Behind The Project
+    </h2>
+    <div class="card">
+      <div class="card-content">
+        <p>
+          Despite the huge influence of technology in our daily life, the
+          majority of the students still create their notes manually with pen
+          and paper. While this may work at a lower level, managing these notes
+          becomes a tedious task at higher levels. Additionally, there is a risk
+          of these paper notes being destroyed or lost. To resolve this problem,
+          we decided to construct a web-based application that helps students to
+          create and manage their notes with ease. While web-based note apps
+          already exist and provide good services, our main aim is to increase
+          the convenience for students manifold by building upon these apps as
+          our base.
+        </p>
+      </div>
+    </div>
+    <!-- Create Note Button -->
+    <div class="section center-align">
+      <a class="btn teal lighten-1 modal-trigger" href="{% url 'Notes' %}"
+        >Create a New Note</a
+      >
+    </div>
+  </div>
+
+  <!-- Instructions Section -->
+  <div class="section">
+    <h2 class="center teal-text text-darken-3">How To Use This Site</h2>
+    <div class="card">
+      <div class="card-content">
+        <p>
+          The user or the student must first register to access the system. Once
+          registered, the student can add, remove, and toggle the visibility
+          (public/private) of their notes. They can also view notes available on
+          the public ledger. Each user will have a unique username and password
+          to access their account, and each note will have a unique identifier
+          called NoteId. Similarly, each public note will have a PublicId.
+        </p>
+        <p>
+          <strong>Admin Controls:</strong> The admin is provided with login
+          credentials and can view registered users along with their notes'
+          titles and creators. However, the admin cannot view or change the
+          actual note content and has the authority only to remove a user's
+          note.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
