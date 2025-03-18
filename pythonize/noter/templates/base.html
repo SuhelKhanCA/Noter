@@ -23,7 +23,7 @@
     <nav class="teal lighten-1">
       <div class="nav-wrapper container">
         <!-- Logo -->
-        <a href="#" class="brand-logo left">Noter</a>
+        <a href="{% url 'Home' %}" class="brand-logo left">Noter</a>
 
         <!-- Mobile Menu Trigger -->
         <a href="#" data-target="mobile-demo" class="sidenav-trigger right">
@@ -33,9 +33,9 @@
         <!-- Desktop Navigation Links -->
         <ul class="right hide-on-med-and-down">
           <li><a href="#">How To Use?</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="{% url 'login' %}">Login</a></li>
           <li><a href="#">Register</a></li>
-          <li><a href="#">Your Notes</a></li>
+          <li><a href="{% url 'Notes' %}">Your Notes</a></li>
           <li><a href="#">Add Note</a></li>
           <li><a href="#">Public Notes</a></li>
           <li><a href="#">Log Out</a></li>
@@ -46,7 +46,7 @@
     <!-- Mobile Navigation (Sidenav) -->
     <ul class="sidenav" id="mobile-demo">
       <li><a href="#">How To Use?</a></li>
-      <li><a href="#">Login</a></li>
+      <li><a href="{% url 'login' %}">Login</a></li>
       <li><a href="#">Register</a></li>
       <li><a href="#">Your Notes</a></li>
       <li><a href="#">Add Note</a></li>

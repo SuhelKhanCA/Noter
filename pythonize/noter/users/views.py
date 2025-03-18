@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
-from django.http import HttpResponse
 # Create your views here.
 
 def login_view(request):
@@ -12,8 +11,12 @@ def login_view(request):
         
         if user is not None:
             login(request, user)
-            return HttpResponse("Login Successful")
+            # Todo : Flash message
+            # return HttpResponse("Login Successful")
+            return render(request, "website/welcome.html")
         else:
-            return HttpResponse("Login Failed - Invalid credentials")
+            # Todo : Flash message
+            # return HttpResponse("Login Failed - Invalid credentials")
+            return render(request, "users/login.html")
     else:        
         return render(request, "users/login.html")
