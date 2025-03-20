@@ -9,45 +9,13 @@
 
 ```plaintext
 suhelkhanca-noter/
-├── add_note.php                # Handles the addition of new notes.
-├── admin_publicnotes.php       # Admin view of public notes.
-├── admin_user_notes.php        # Admin management of user-specific notes.
-├── admin_viewnotes.php         # Admin interface to view all notes.
-├── ai.php                      # AI integration for generating or summarizing notes.
-├── completeinfo.php            # Displays detailed information for a specific user/note.
-├── completely_delete.php       # Permanently deletes notes or user data.
-├── dbconnect.php               # Database connection setup.
-├── edit_note.php               # Frontend for editing notes.
-├── edit_note_backend.php       # Backend logic for editing notes.
-├── footer.php                  # Footer component for web pages.
-├── generate_notes.php          # Backend logic for generating notes via OpenAI.
-├── index.php                   # Homepage of the application.
-├── log-footer.php              # Footer for login pages.
-├── login.php                   # User login page.
-├── logout.php                  # User logout logic.
-├── makeprivate.php             # Converts a public note to private.
-├── makepublic.php              # Converts a private note to public.
-├── nav.php                     # Navigation bar for the app.
-├── notes.php                   # Displays user-specific notes.
-├── publicnotes.php             # Displays all public notes.
-├── register.php                # User registration page.
-├── remove.php                  # Logic for removing notes.
-├── removeUser.php              # Logic for removing user accounts.
-├── repeal.php                  # Undo actions like delete or make private.
-├── summerize_notes.php         # Backend for summarizing notes via AI.
-├── temp_remove_user.php        # Temporarily removes user accounts.
-├── use.php                     # Utility functions and common logic.
-├── view_note.php               # Displays a single note in detail.
-├── view_users.php              # Admin interface to view and manage users.
-├── css/
-│   ├── footer.css              # Styling for the footer.
-│   ├── use.css                 # General-purpose styles.
-│   └── materialize/            # Materialize CSS framework files.
-├── img/                        # Directory for images.
-└── js/
-    ├── create_note.js          # JavaScript logic for note creation.
-    ├── main.js                 # Main JavaScript file for global interactions.
-    └── materialize/            # Materialize JavaScript files.
+├── css # for css old
+├── img # for img old
+├── js # for js old
+├── old-php # for old-php code
+├── pythonize # main django directory
+
+
 ```
 
 ## Features
@@ -101,11 +69,6 @@ Development Environment
 
 Installation and Setup
 
-Requirements
-
-* XAMPP installed on Windows.
-* PHP 7.4+ and MySQL 5.7+.
-
 Steps to Run
 
 1. Clone the Repository:
@@ -113,29 +76,6 @@ Steps to Run
 ```bash
 git clone [https://github.com/SuhelKhanCA/suhelkhanca-noter.git](https://github.com/SuhelKhanCA/suhelkhanca-noter.git)
 ```
-
-4. Start XAMPP:
-
-   Start Apache and MySQL from the XAMPP control panel.
-
-5. Set Up Database:
-
-   Open phpMyAdmin at http://localhost/phpmyadmin/.
-   Create a database (e.g., noter_db).
-   Import the database schema provided in dbconnect.php or a .sql file.
-
-6. Configure OpenAI API Key:
-
-   Get an API key from OpenAI.
-   Add the API key to ai.php:
-
-```php
-$openai_key = 'YOUR_API_KEY';
-```
-7. Access the Application:
-
-Open your browser and visit http://localhost/suhelkhanca-noter.
-
 
 ## Usage
 
